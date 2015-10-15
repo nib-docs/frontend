@@ -5,6 +5,9 @@ of time experimenting to work out the ideal frontend structure and tooling to su
 at nib. From these learnings we've created a [generator](https://www.npmjs.com/package/generator-fed) to speed up the 
 creation of new projects and to keep our projects more consistent across teams.
 
+The generator should suit most frontend projects regardless of framework e.g. React, Angular or no framework. If the 
+generated structure and tooling doesn't suit your needs one of the FEDs would love to chat with you about it! :smiley:
+
 ## Project setup
 
 > Get in touch with Shannon if you're building a .NET MVC project, he's building a scaffolding tool for .NET MVC projects 
@@ -45,7 +48,7 @@ and it will perform the following setup.
     
 6. Because the assets get cache busted, if you're not creating a static site you'll need to use a helper to reference your script, style and image assets from your templates. 
 
-    > Use use [this](http://ntlvmbld01:7990/projects/NC/repos/nib-common-revisioned-asset-helper/browse) helper for .NET MVC.
+    > Use [this](http://ntlvmbld01:7990/projects/NC/repos/nib-common-revisioned-asset-helper/browse) helper for .NET MVC.
 
     > Turn [this](https://github.com/jameslnewell/ruby-frontend/blob/master/app/helpers/asset_helper.rb) and [this](https://github.com/jameslnewell/ruby-frontend/blob/e7014bc5ffdc3a77d05f125d60c00fbbc69be437/config/initializers/asset_manifest.rb) classes into a gem for Ruby on Rails.
     
