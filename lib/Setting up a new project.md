@@ -41,5 +41,5 @@ Setting up your the build tools and project structure is time consuming and erro
     > Use use [this](http://ntlvmbld01:7990/projects/NC/repos/nib-common-revisioned-asset-helper/browse) helper for .NET MVC.
 
     > Turn [this](https://github.com/jameslnewell/ruby-frontend/blob/master/app/helpers/asset_helper.rb) and [this](https://github.com/jameslnewell/ruby-frontend/blob/e7014bc5ffdc3a77d05f125d60c00fbbc69be437/config/initializers/asset_manifest.rb) classes into a gem for Ruby on Rails.
-
-
+    
+7. Configure Bambo to use the test results in `./dist/__reports__/mocha.json`
