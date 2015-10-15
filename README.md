@@ -61,7 +61,7 @@ Browsers don't have any concept of modules. We use [browserify](http://browserif
       bundled.css
       bundled.js
       
-      reports/
+      __reports__/
         mocha.json
         coverage/
           index.html
