@@ -4,6 +4,12 @@ This document will guide you through the methodologies, tools and frameworks use
 
 ## Overview
 
+### Basics
+
+#### functional programming
+
+- https://drboolean.gitbooks.io/mostly-adequate-guide/content/
+
 ### Methodologies
 
 - unix
@@ -36,7 +42,7 @@ Learn more about modules in Node.js [here](https://nodejs.org/docs/latest/api/mo
 
 [npm](https://www.npmjs.com/) is the package manager used for downloading, installing and managing our frontend tools and dependencies.
 
-A "package" consists of one or more files (and isn't limited to just JavaScript files) and a [manifest file](https://docs.npmjs.com/files/package.json) that contains meta data about the package.
+A "package" consists of a [manifest file](https://docs.npmjs.com/files/package.json) containing meta data about the package and one or more files, and isn't limited to just JavaScript files.
 
 #### browserify
 
@@ -45,8 +51,10 @@ Browsers don't have any concept of modules. We use [browserify](http://browserif
 > [Webpack](https://webpack.github.io/) is the most suitable competing tool for bundling scripts (and more). We chose browserify because:
 >
 > - it uses convention over configuration (but is still highly configurable) making it easier to setup for most cases
-> - its module philosophy - transforms are configured by the package owner, not the project owner - the project owner shouldn't have to figure out which transforms are required by each of their dependencies
+> - its module philosophy - transforms are configured by the package owner, not the project owner - the project owner shouldn't have to figure out which transforms are required by each of their dependencies e.g. https://github.com/webpack/webpack/issues/378#issuecomment-50258332
 > - it doesn't break nodejs conventions (e.g. `require('coffee!./cup.coffee')`)
+
+[Here's a good read on the differences](http://blog.namangoel.com/browserify-vs-webpack-js-drama).
 
 #### sass-composer
 
