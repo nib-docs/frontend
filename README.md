@@ -1,6 +1,6 @@
 # Frontend
 
-This document will guide you through the methodologies, tools and frameworks used for Frontend Development at nib.
+A guide you through the methodologies, tools and frameworks used for Frontend Development at nib.
 
 ## Overview
 
