@@ -1,0 +1,6 @@
+{
+  "name": "frontend",
+  "scripts": {
+    "publish": "gitbook build && cd ./dist && git init && git add -A && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && git push git@github.com:nib-docs/frontend gh-pages --force"
+  }
+}

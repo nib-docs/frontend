@@ -7,6 +7,7 @@ Running tests in a real(-ish) browser is painful because:
 - the DOM is one massive global state and one broken or incomplete test can affect all of the other tests
 - debugging tests in a real(-ish) browser is slow and painful
 
+
 React abstracts the DOM away from the developer and React Components can be tested without a browser. Browserless tests
 run much faster than traditional tests, they don't require a global DOM and debugging view code is the same as
 debugging any other code in Node.JS.
@@ -19,7 +20,6 @@ result of a Component's `render()` method.
 
 `./Counter.jsx`
 ```javascript
-
 import React from 'react';
 
 class Counter extends React.Component {
@@ -27,22 +27,22 @@ class Counter extends React.Component {
   constructor(props, ...args) {
     super(props, ...args);
     this.state = {
-      times: props.initialTimes
+      count: props.initialCount
     };
     this.handleIncrement = this.handleIncrement.bind(this);
   }
 
   handleIncrement() {
     this.setState({
-      times: this.state.times + 1
+      count: this.state.count + 1
     });
   }
 
   render() {
-    const {times} = this.props;
+    const {count} = this.state;
     return (
       <div>
-        Count: {times}.
+        Count: {count}.
         <button onClick={this.handleIncrement}>Increment</button>
       </div>
     );
@@ -51,7 +51,7 @@ class Counter extends React.Component {
 }
 
 Counter.defaultProps = {
-  initialTimes: 0
+  initialCount: 0
 };
 
 export default Counter;
@@ -61,18 +61,61 @@ export default Counter;
 `./test/Counter.jsx`
 ```javascript
 
-import {createRenderer} from 'react';
-import {expect} from 'chai';
+import React from 'react';
+import ReactTestUtils from 'react-addons-test-utils';
+import $ from 'react-testutils-query';
+import render from 'react-testutils-render';
+
+import chai, {expect} from 'chai';
+import jsxChai from 'jsx-chai';
+
 import Counter from '../Counter';
 
-function render(element) {
-  const renderer = createRenderer().render(element);
-  return renderer.getRenderOutput();
-}
+chai.use(jsxChai);
 
 describe('Counter', () => {
 
-  describe('render()', () => {
+  describe('.constructor()', () => {
+
+    it('should have an initial count of 0 when .initialCount is not specified', () => {
+      const rendered = render(<Counter/>);
+      expect(rendered.component.state).to.have.property('count', 0);
+    });
+
+    it('should have an initial count of 100 when .initialCount is specified', () => {
+      const rendered = render(<Counter initialCount={100}/>);
+      expect(rendered.component.state).to.have.property('count', 100);
+    });
+
+  });
+
+  describe('.handleIncrement()', () => {
+
+    it('should increment the count by 1 when called', () => {
+      const rendered = render(<Counter/>);
+      rendered.component.handleIncrement();
+      expect(rendered.component.state).to.have.property('count', 1);
+    });
+
+  });
+
+  describe('.render()', () => {
+
+    it('should render the count', () => {
+
+      expect(render(<Counter/>).element).to.deep.equal(
+        <div>
+          Count: {0}.
+          <button onClick={() => {}}>Increment</button>
+        </div>
+      );
+
+    });
+
+    it('should pass the handler to the button', () => {
+      const rendered = render(<Counter/>);
+      expect($('button', rendered.element).props.onClick).to.equal(rendered.component.handleIncrement);
+    });
 
   });
 
@@ -80,25 +123,9 @@ describe('Counter', () => {
 
 ```
 
-- use shallow component testing
-- can't test any components with `ref`s
+## TODO:
 - need to export undecorated components - could use es7 decorators and babel-remove-decorator-plugin
-- mocha+chai+jsx-chai
-
-
-## What
-
-1. Given properties and state, the structure of our rendered tree is correct.
-2. Given a rendered tree, we should be able to change the state
-
-## Where
-
-## How
-
-Shallow rendering
-
-Note: Can't test components that make use of `ref`s. We want to avoid them anyway!
-
+- Note: Can't test components that make use of `ref`s. We want to avoid them anyway!
 
 ## Resources
 
