@@ -16,6 +16,7 @@ class Counter extends React.Component {
     });
   }
 
+  //todo: show/hide increment/decrement buttons based on count
   render() {
     const {count} = this.state;
     return (

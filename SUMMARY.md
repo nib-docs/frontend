@@ -11,4 +11,5 @@
   - [React](./frameworks/react/index.md)
     - [Testing](./frameworks/react/testing.md)
 
-  - Flux
+  - [Redux](./frameworks/redux/index.md)
+    - [Testing](./frameworks/redux/testing.md)

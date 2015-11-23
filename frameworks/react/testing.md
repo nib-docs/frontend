@@ -62,7 +62,6 @@ export default Counter;
 ```javascript
 
 import React from 'react';
-import ReactTestUtils from 'react-addons-test-utils';
 import $ from 'react-testutils-query';
 import render from 'react-testutils-render';
 
