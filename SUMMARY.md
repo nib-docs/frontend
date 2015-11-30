@@ -13,3 +13,8 @@
 
   - [Redux](./frameworks/redux/index.md)
     - [Testing](./frameworks/redux/testing.md)
+
+- [Styling](./styling/index.md)
+
+- Appendix
+    - [Migrating from the old grid](./appendix/migrating-from-the-old-grid.md)
