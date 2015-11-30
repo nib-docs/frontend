@@ -24,3 +24,7 @@ responsive layouts.
 
 > The grid uses custom attributes. Use the [react-sass-grid-support](https://github.com/nib-components/react-sass-grid-support)
 package to make it work with React.
+
+### [Spacing](https://github.com/nib-styles/sass-spacing)
+
+Responsive margin and padding classes (and mixins).
