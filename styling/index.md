@@ -13,4 +13,4 @@ responsive layouts.
 
 - [examples](http://digitaledgeit.github.io/sass-grid/example/example.html)
 - [breakpoints](https://github.com/nib-styles/sass-breakpoints#breakpoints)
-- [migrating from the old grid](./migrating-from-the-old-grid.md)
+- [migrating from the old grid](../appendix/migrating-from-the-old-grid.md)
