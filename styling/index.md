@@ -1,5 +1,9 @@
 # Styling
 
+## Methodology
+
+## Block Element Modifier
+
 ## Resources
 
 ### [Pattern Library](https://nib-pattern-library.firebaseapp.com/)

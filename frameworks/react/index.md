@@ -6,6 +6,12 @@ Mostly a view. Also a controller.
 
 ## Guidelines
 
+## When to use React
+
+When data rendered on the page changes.
+
+Note: If your data is static you could still render the data with React at build time, or on the server.
+
 ## Avoid keeping state in components
 
 Storing state in components is an anti-pattern because you lose some of the benefits of `React`:
