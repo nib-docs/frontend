@@ -44,3 +44,18 @@
       Watching Dan Ambrov’s Egghead tutorials
       Using our tooling:
       Use the generator to create various app types (note: nib specific one can be found here but requires private npm access to npm install all our packages)
+
+    https://medium.com/@shaunbent/css-at-bbc-sport-part-1-bab546184e66#.wg1myy957
+
+
+Be careful of using cascading styles (those that are inherited by child elements) e.g. color, font-size. Limit usage
+to BEM elements rather than blocks which apply the style for all the things.
+
+
+## Component conventions
+- use singlar words for component name e.g. `<Alert/>` `<Button/>`
+- don't use the component name to distinguish variants, use a property instead e.g. <Alert type="info"/> <Button
+color="primary"/> instead of `<InfoAlert/>`, `<YelloButton/>`
+- use standard color names for values of `color` properties
+- use `xs`, `sm`, `md`, `lg` and `xl` for `size` properties (except `<Heading/>` where there is a long running
+convention)
