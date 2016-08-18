@@ -128,6 +128,8 @@ Tooling:
 - use jquery like methods that give good diffs using standard chai methods
 
 ## TODO:
+- don't bother testing XYZ
+- name tests like XYZ
 - there's no need to re-render because you can test handler*() and render() methods separately
 - need to export undecorated components - could use es7 decorators and babel-remove-decorator-plugin
 - Note: Can't test components that make use of `ref`s. We want to avoid them anyway!
