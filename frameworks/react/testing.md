@@ -122,6 +122,11 @@ describe('Counter', () => {
 
 ```
 
+Tooling:
+
+- Use `chai` expect syntax
+- use jquery like methods that give good diffs using standard chai methods
+
 ## TODO:
 - there's no need to re-render because you can test handler*() and render() methods separately
 - need to export undecorated components - could use es7 decorators and babel-remove-decorator-plugin
