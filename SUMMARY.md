@@ -22,6 +22,7 @@
 
 
     TODO:
+    - creating a new component
     - binding in the constructor
     - using mapDispatchToProps to make testing simpler
 
@@ -30,7 +31,7 @@
       Knowing what BEM is and understanding the reasons behind it
       The grid we use
     Learning JS:
-      ES6/7 syntax (concentrate on syntax rather than new objects – sets, symbols etc)
+      ES6/7 syntax (concentrate on syntax rather than new objects – sets, symbols etc) (ponyfoo)
       Promises
       npm
       Semver
