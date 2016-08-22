@@ -45,6 +45,7 @@
       Watching Dan Ambrov’s Egghead tutorials
       Using our tooling:
       Use the generator to create various app types (note: nib specific one can be found here but requires private npm access to npm install all our packages)
+      http://jaysoo.ca/2016/02/28/organizing-redux-application/
 
     https://medium.com/@shaunbent/css-at-bbc-sport-part-1-bab546184e66#.wg1myy957
 
