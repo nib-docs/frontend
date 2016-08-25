@@ -21,6 +21,8 @@
     - [Migrating from the old grid](./appendix/migrating-from-the-old-grid.md)
 
 
+    - don't mixin grid at all now we're using react - grid mixins were great for creating reusable components before react templating existed
+
     TODO:
     - creating a new component
     - binding in the constructor
