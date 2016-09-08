@@ -3,6 +3,8 @@
 ## Methodology
 
 ## Block Element Modifier
+https://www.theodo.fr/blog/2015/10/how-i-stopped-worrying-and-learned-to-love-the-css-with-bem/
+https://en.bem.info/methodology/quick-start/
 
 ## Resources
 
