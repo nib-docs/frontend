@@ -29,6 +29,12 @@ It might be a good time to start using `Redux` when:
 
 https://medium.com/swlh/the-case-for-flux-379b7d1982c6#92f6
 
+
+## structure
+- by domain - give package example from arhi-sales-web
+- selectors
+- compose selectors and reducers for each level of the state
+
 ## Actions
 
 - [standard](https://github.com/acdlite/flux-standard-action)
