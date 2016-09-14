@@ -32,3 +32,4 @@ https://medium.com/swlh/the-case-for-flux-379b7d1982c6#92f6
 ## Actions
 
 - [standard](https://github.com/acdlite/flux-standard-action)
+- name actions as an action i.e. with a verb e.g. `SET_SELECTED_PACKAGE`, `CLEAR_SELECTED_PACKAGE`
