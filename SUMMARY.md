@@ -1,5 +1,7 @@
 # Summary
 
+- [Setting up a new project](./setting-up-a-new-project.md)
+
 - [Methodology](./methodology/index.md)
 
   - [Testing](./methodology/testing.md)
