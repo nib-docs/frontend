@@ -10,7 +10,7 @@ The time from the start of the initial navigation until the first byte of the ba
 
 > Note: TTFB can affect SEO ranking.
 
-> Note: TTFB is a meaningless metric if your body isn't delivered with the first byte. See [CloudFlare](https://blog.cloudflare.com/ttfb-time-to-first-byte-considered-meaningles/)'s blog for more information.
+> Note: TTFB is meaningless if your body isn't delivered along with your first byte. See [CloudFlare](https://blog.cloudflare.com/ttfb-time-to-first-byte-considered-meaningles/)'s blog for more information.
 
 ### Start render
 
