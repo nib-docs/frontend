@@ -42,7 +42,7 @@ For content pages, render actual content as HTML on the server (or even better, 
 
 For apps, render placeholder content as HTML on the server (or even better, at build time). Placeholder content should 
 not be specific to any user (so it can be cached) and should not require actual data 
-(waiting for actual data will increase `TTFB` and `SR`).
+(waiting for actual data will increase `TTFB` and `Start Render`).
 
 ### Scripts and Styles
 
