@@ -15,7 +15,7 @@ The time from the start of the initial navigation until the first byte of the ba
 
 The Start Render time is measured as the time from the start of the initial navigation until the first non-white content is painted to the browser display. Any CSS and blocking JS you have on the page has to be downloaded and parsed by the browser before it can render anything to screen. This is called the critical rendering path and the Start Render metric is very important in understanding how long users have to wait before anything is displayed on screen.
 
-`Start Render` should be `<2s` on a `3G` or better connection.
+`Start Render` should be `<3s` on a `3G` or better connection.
 
 ### Time To Interactive
 
@@ -25,7 +25,7 @@ The Start Render time is measured as the time from the start of the initial navi
 
 Visually complete is the time at which all the content in the viewport has finished rendered and nothing changed in the viewport after that point as the page continued loading. It's a great measure of the user experience as the user show now see a full screen of content and be able to engage with the content of your site.
 
-`Visually complete` should be `<4s` on a `3G` or better connection.
+`Visually complete` should be `<5s` on a `3G` or better connection.
 
 ## Guidelines
 
