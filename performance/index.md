@@ -25,7 +25,7 @@ The Start Render time is measured as the time from the start of the initial navi
 
 Visually complete is the time at which all the content in the viewport has finished rendered and nothing changed in the viewport after that point as the page continued loading. It's a great measure of the user experience as the user show now see a full screen of content and be able to engage with the content of your site.
 
-`Visually complete` should be `<2s` on a `3G` or better connection.
+`Visually complete` should be `<4s` on a `3G` or better connection.
 
 ## Guidelines
 
