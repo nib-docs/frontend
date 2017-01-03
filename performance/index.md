@@ -97,3 +97,7 @@ This bundle is optional. It should contain non-project specific code that is use
 - max size for hero type images
 - retina images
 - per-device images
+
+### Fonts
+
+TODO:
