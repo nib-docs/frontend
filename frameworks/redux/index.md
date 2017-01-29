@@ -31,7 +31,7 @@ https://medium.com/swlh/the-case-for-flux-379b7d1982c6#92f6
 
 
 ## structure
-- by domain - give package example from arhi-sales-web
+- by domain - give package example from arhi-sales-web - others have come to the same conclusion https://jaysoo.ca/2016/02/28/organizing-redux-application/
 - selectors
 - compose selectors and reducers for each level of the state
 
